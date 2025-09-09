@@ -1,17 +1,15 @@
-// This is the main container that assembles all the primary page sections.
-
-import './App.css'
-import {Header} from "../header/Header.tsx";
-import {Main} from "../main/Main.tsx";
-import {Footer} from "../footer/Footer.tsx";
+import {Header} from '../header/Header';
+import {Main} from '../main/Main';
+import {Footer} from '../footer/Footer';
 
 function App() {
     return (
-        <>
+        <div className="bg-white font-sans text-gray-800">
             <Header/>
             <Main/>
             <Footer/>
-        </>)
+        </div>
+    );
 }
 
-export default App
+export default App;
